@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Calculator using Javascript</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Simple Calculator</h2>
+        <input id="num-one" name="num-one" type="text" onkeydown="changeFocus(event, 'num-two')">
+        <input id="num-two" name="num-two" type="text" onkeydown="changeFocus(event, 'calculate')" >
+        <br><br>
+        <input checked id="box1" name="sign-area" type="radio" value="add"><b>+</b>
+        <input id="box2" name="sign-area" type="radio" value="subtract"><b>-</b>
+        <input id="box3" name="sign-area" type="radio" value="multiply"><b>*</b>
+        <input id="box4" name="sign-area" type="radio" value="divide"><b>/</b>
+        <br><br>
+        <button id="calculate" onclick="outcome()" type="button">calculate</button>
+        <h1 id="resultArea"></h1>
+    </div>
+    <script src="index.js"></script> 
+    <script>
+        function changeFocus(event, nextElementId) {
+            if (event.keyCode === 13) { // Verifica se a tecla pressionada é "Enter" (código 13)
+                event.preventDefault(); // Evita o comportamento padrão do "Enter" (como submeter um formulário)
+                document.getElementById(nextElementId).focus(); // Muda o foco para o próximo elemento especificado pelo ID
+            }
+        }
+    </script>
+</body>
+</html> 
