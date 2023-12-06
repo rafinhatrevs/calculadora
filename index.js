@@ -15,3 +15,4 @@ function outcome() { //função para fazer com que o botão funcione
     else //verifica se a box4 está marcada
         total = num1 / num2
     document.getElementById('resultArea').innerHTML = 'Result: ' + String(total) //retorna o valor dos cálculos
+}
