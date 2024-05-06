@@ -1,18 +1,24 @@
+function outcome() {
+    let num1 = Number(document.getElementById('num-one').value);
+    let num2 = Number(document.getElementById('num-two').value);
+    let total = 0;
 
+    if (document.getElementById('box1').checked) {
+        total = num1 + num2;
+    } else if (document.getElementById('box2').checked) {
+        total = num1 - num2;
+    } else if (document.getElementById('box3').checked) {
+        total = num1 * num2;
+    } else {
+        total = num1 / num2;
+    }
 
-function outcome() { //função para fazer com que o botão funcione
+    document.getElementById('result_area').innerHTML = 'RESULT: ' + String(total);
+}
 
-    let num1 = Number(document.getElementById('num-one').value) //pega o valor da primeira caixinha
-    let num2 = Number(document.getElementById('num-two').value) //pega o valor da segunda caixinha
-    let total = 0
-
-    if (document.getElementById('box1').checked) //verifica se a box1 está marcada
-        total = num1 + num2
-    else if (document.getElementById('box2').checked) //verifica se a box2 está marcada
-        total = num1 - num2
-    else if (document.getElementById('box3').checked) //verifica se a box3 está marcada
-        total = num1 * num2
-    else //verifica se a box4 está marcada
-        total = num1 / num2
-    document.getElementById('resultArea').innerHTML = 'Result: ' + String(total) //retorna o valor dos cálculos
+function changeFocus(event, nextElementId) {
+    if (event.keyCode === 13) { //verifica se a tecla pressionada é "Enter" (código 13)
+        event.preventDefault(); //evita o comportamento padrão do "Enter" (como submeter um formulário)
+        document.getElementById(nextElementId).focus(); //muda o foco para o próximo elemento especificado pelo ID
+    }
 }

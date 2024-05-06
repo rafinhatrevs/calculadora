@@ -1,53 +1,61 @@
 body {
-	background: pink;
+	background: #D4CDF4;
 }
+
 .wrapper {
+	background: #7A6F9B;
 	width: 400px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background: #DB7093;
 	padding: 50px;
-	color: #fff;
 	text-align: center;
 }
+
 .wrapper h2 {
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
+	color: #fff;
 	margin-bottom: 10%;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 28px;
 	font-weight: normal;
 }
-input[type="text"] {
-	height: 40px;
 
-}
 input[type="text"] {
+	background-color: #8B85C1;
+	color: #fff;
+	height: 40px;
 	font-size: 24px;
 }
-button {
-	background: #F08080;
-	border: none;
-	color: #fff;
-	display: inline-block;
-	padding: 10px 25px;
-	font-size: 18px;
-	text-transform: uppercase;
-	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 2px;
-	font-weight: normal;
-}
+
 input[type="radio"] {
 	width: 20px;
 	height: 20px;
 }
+
 b {
-	font-size: 30px;
+	color: #fff;
+	font-size: 24px;
 }
-#resultArea {
-    font-family: 'Montserrat', sans-serif; 
-    font-size: 28px;
-    color: #fff; 
-    margin-top: 20px;
+
+button {
+	background: #8B85C1;
+	color: #fff;
+	border: none;
+	display: inline-block;
+	padding: 10px 25px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+#result_area {
+	color: #fff;
+	margin-top: 20px;
+	font-family: 'Roboto Mono', sans-serif;
+	font-size: 24px;
 	font-weight: normal;
 }
