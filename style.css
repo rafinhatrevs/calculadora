@@ -14,8 +14,8 @@ body {
 }
 
 .wrapper h2 {
-	color: #fff;
 	margin-bottom: 10%;
+	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Roboto Mono', sans-serif;
 	font-size: 28px;
@@ -24,8 +24,8 @@ body {
 
 input[type="text"] {
 	background-color: #8B85C1;
-	color: #fff;
 	height: 40px;
+	color: #fff;
 	font-size: 24px;
 }
 
@@ -41,20 +41,20 @@ b {
 
 button {
 	background: #8B85C1;
-	color: #fff;
 	border: none;
 	display: inline-block;
 	padding: 10px 25px;
 	letter-spacing: 2px;
+	color: #fff;
 	text-transform: uppercase;
 	font-family: 'Roboto Mono', sans-serif;
 	font-size: 24px;
 	font-weight: normal;
 }
 
-#result_area {
-	color: #fff;
+#result-area {
 	margin-top: 20px;
+	color: #fff;
 	font-family: 'Roboto Mono', sans-serif;
 	font-size: 24px;
 	font-weight: normal;
