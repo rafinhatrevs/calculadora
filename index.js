@@ -17,8 +17,8 @@ function outcome() {
 }
 
 function changeFocus(event, nextElementId) {
-    if (event.keyCode === 13) { // verifica se a tecla pressionada é "Enter" (código 13)
-        event.preventDefault(); // evita o comportamento padrão do "Enter" (como submeter um formulário)
-        document.getElementById(nextElementId).focus(); // muda o foco para o próximo elemento especificado pelo ID
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById(nextElementId).focus();
     }
 }
