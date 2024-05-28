@@ -1,1 +1,1 @@
- Atividade - Simple Calculator
+Activity - Simple Calculator
